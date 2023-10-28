@@ -1,0 +1,145 @@
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.btn-login, .btn-register {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--Medium-Gray);
+}
+
+.btn-register {
+    border: 2px solid var(--Medium-Gray);
+    border-radius: 10px;
+}
+
+.btn-login:hover {
+    color: var(--Almost-Black);
+    font-weight: 700;
+}
+
+.btn-register:hover{
+    color: var(--Almost-Black);
+    font-weight: 700;
+    border-color: var(--Almost-Black);
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: 1440px;
+    padding-inline: 3rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    padding-left: 3rem;
+    gap: 2rem;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    color: var(--Medium-Gray);
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-menu li:hover {
+    color: var(--Almost-Black)
+}
+
+.sub-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--Almost-White);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.75);
+    gap: 1rem;
+}
+
+.one {
+    bottom: -170px;
+    right: 0;
+}
+
+.two {
+    bottom: -140px;
+}
+
+.sub-menu .sub-link {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    gap: 0.5rem;
+}
+
+.arrow:active {
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media  screen and (max-width:800px) {
+    .navbar {
+        padding-inline: 1rem;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+        z-index: 90;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 70%;
+        background-color: var(--Almost-White);
+        padding: 5rem 2rem;
+    }
+    
+    
+}
