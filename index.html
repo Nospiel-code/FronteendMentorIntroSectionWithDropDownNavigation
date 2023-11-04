@@ -11,17 +11,7 @@
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+    
 </head>
 
 <body>
@@ -118,12 +108,32 @@
       </div>
     </nav>
 
+    <main class="main-content">
+      <div class="text-container">
+        <div class="body-copy">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button class="learn-more-btn">Learn more</button>
+        </div>
+        <div class="logo-container">
+          <img src="images/client-databiz.svg" alt="databiz logo"/>
+          <img src="images/client-audiophile.svg" alt="audiophile logo"/>
+          <img src="images/client-meet.svg" alt="meet logo"/>
+          <img src="images/client-maker.svg" alt="maker logo"/>
+        </div>
+      </div>
+      <div class="img-container">
+        <picture>
+          <source srcset="./images/image-hero-mobile.png" media="(max-width: 780px)" class="hero-img"/>
+          <img src="./images/image-hero-desktop.png"  class="hero-img"/>
+        </picture>
+      </div>
+    </main>
 
-
-
+    <!-- Attribution -->
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Thomas Schütz</a>.
+      Coded by <a href="https://www.twitter.com/tomsdev4">Thomas Schütz</a> and <a href="https://www.twitter.com/mannyAndem">Emmanuel Andem</a>.
     </div>
 </body>
 
