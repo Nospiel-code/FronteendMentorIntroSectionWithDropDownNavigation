@@ -11,7 +11,7 @@
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-    
+
 </head>
 
 <body>
@@ -66,18 +66,19 @@
                 Features <img class="arrow" src="images/icon-arrow-down.svg" alt="">
               </p>
               <div class="mobile-sub">
-                <img src="images/icon-todo.svg" alt="">
-                Todo List
+                <p>
+                  <img src="images/icon-todo.svg" alt="">
+                  Todo List
                 </p>
-                <p class="mobile-sub">
+                <p class="sub-link">
                   <img src="images/icon-calendar.svg" alt="">
                   Calendar
                 </p>
-                <p class="mobile-sub">
+                <p class="sub-link">
                   <img src="images/icon-reminders.svg" alt="">
                   Reminders
                 </p>
-                <p class="mobile-sub">
+                <p class="sub-link">
                   <img src="images/icon-planning.svg" alt="">
                   Planning
                 </p>
@@ -87,7 +88,7 @@
               <p>
                 Company <img class="arrow" src="images/icon-arrow-down.svg" alt="">
               </p>
-              <div class="mobile-menu">
+              <div class="mobile-sub">
                 <p class="sub-link">History</p>
                 <p class="sub-link">Our Team</p>
                 <p class="sub-link">Blog</p>
@@ -100,6 +101,10 @@
               About
             </li>
           </ul>
+          <div class="button-mobile">
+            <button class="btn-login">Login</button>
+            <button class="btn-register">Register</button>
+          </div>
         </div>
         <div class="nav-right">
           <button class="btn-login">Login</button>
@@ -111,29 +116,34 @@
     <main class="main-content">
       <div class="text-container">
         <div class="body-copy">
-        <h1>Make remote work</h1>
-        <p>Get your team in sync no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-        <button class="learn-more-btn">Learn more</button>
+          <h1>Make remote work</h1>
+          <p>Get your team in sync no matter your location. Streamline processes, create team rituals, and watch
+            productivity soar.</p>
+          <button class="learn-more-btn">Learn more</button>
         </div>
         <div class="logo-container">
-          <img src="images/client-databiz.svg" alt="databiz logo"/>
-          <img src="images/client-audiophile.svg" alt="audiophile logo"/>
-          <img src="images/client-meet.svg" alt="meet logo"/>
-          <img src="images/client-maker.svg" alt="maker logo"/>
+          <img src="images/client-databiz.svg" alt="databiz logo" />
+          <img src="images/client-audiophile.svg" alt="audiophile logo" />
+          <img src="images/client-meet.svg" alt="meet logo" />
+          <img src="images/client-maker.svg" alt="maker logo" />
         </div>
       </div>
       <div class="img-container">
         <picture>
-          <source srcset="./images/image-hero-mobile.png" media="(max-width: 780px)" class="hero-img"/>
-          <img src="./images/image-hero-desktop.png"  class="hero-img"/>
+          <source srcset="./images/image-hero-mobile.png" media="(max-width: 780px)" class="hero-img" />
+          <img src="./images/image-hero-desktop.png" class="hero-img" />
         </picture>
       </div>
+
     </main>
+    <div class="overflow"></div>
+    <script src="./script/main.js"></script>
 
     <!-- Attribution -->
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://www.twitter.com/tomsdev4">Thomas Schütz</a> and <a href="https://www.twitter.com/mannyAndem">Emmanuel Andem</a>.
+      Coded by <a href="https://www.twitter.com/tomsdev4">Thomas Schütz</a> and <a
+        href="https://www.twitter.com/mannyAndem">Emmanuel Andem</a>.
     </div>
 </body>
 
